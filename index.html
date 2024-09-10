@@ -1,94 +1,164 @@
-ISAAC MARTINEZ TORDECILLA - LICENCIATURA EN INFORMATICA
+ISAAC DAVID MARTINEZ TORDECILLA
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo" rel="stylesheet">
-    <style>
-        .cabezote{
-            width: 100%;
-            height: 250px;
-            background-color: rgb(57, 193, 42);
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/20240318_Monteria_inauguracion_edificio_U_Cordoba-Juan_D_Cano0979.jpg/1200px-20240318_Monteria_inauguracion_edificio_U_Cordoba-Juan_D_Cano0979.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .titulo{
-            font-size: 80px;
-            color: rgb(0, 0, 0);
-            font-family: "Crossorigin", cursiva
-           font-weight: 400;
-           font-style: normal;
-        }
-        .logo{
-            width: 80px;
-            height: 80px;
-            padding-left: 20px;
-            border-radius: 50%;
-            padding-right: 20px;
-        }
-
-        ul {
-            list-style-type: none; /* Elimina los puntos de lista predeterminados */
-            padding: 0; /* Elimina el espaciado interno del <ul> */
-            margin: 0; /* Elimina el margen externo del <ul> */
-            display: flex; /* Usa Flexbox para alinear los elementos en una fila */
-        }
-        li {
-            margin-right: 30px;
-            transition: background-color 0.6s, color 0.6s;
-            font-family: "Nerko One", cursive;
-            font-size: 20px;
-            cursor: pointer; /* Espacio entre los elementos de la lista */
-        }
-        li:hover {
-            background-color: #2eb014; /* Color de fondo cuando se pasa el cursor */
-            color: #fff; /* Color del texto cuando se pasa el cursor */
-        }
-
-        .navegacion{
-            background-color: #54eb36;
-            display: flex;
-            justify-content: right;
-        }
-
-        .degradado{
-        background: rgb(133, 197, 127);
-        background: linear-gradient(90deg, rgb(23, 122, 13) 0%, rgba(9,121,69,1) 28%, rgba(64,179,5,1) 75%, rgba(0,255,145,1) 100%);
-        }
-    </style>
+    <title>Universidad de Córdoba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        header {
+            background-color: #4ea005;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 100px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            height: 300px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('https://repositorio.unicordoba.edu.co/assets/custom/images/bg-unicordoba1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .about, .news, .events, .testimonials {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .about p, .news p, .events p, .testimonials p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .news-item, .event-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .news-item img, .event-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<body>
-    <header class="cabezote">
-        <img class="logo" src="https://sibcolombia.net/wp-content/uploads/2016/05/Logo-uc.png">
-        <span class="titulo">UNIVERSIDAD DE CORDOBA</span>
+<body> 
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Escudo_Universidad_de_C%C3%B3rdoba.png" alt="Logo Universidad de Córdoba" class="logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Académico</a>
+            <a href="#">Investigación</a>
+            <a href="#">Admisiones</a>
+            <a href="#">Contacto</a>
+        </nav>
     </header>
-    <nav class="navegacion degradado">
-       <ul>
-        <li>INSTITUCIONAL</li>
-        <li>ACADEMIA</li>
-        <li>INVESTIGACION</li>
-       </ul>
-    </nav>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+
+    <section class="hero">
+        <h1>Bienvenidos a la Universidad de Córdoba</h1>
+    </section>
+
+    <div class="container">
+        <section class="about">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p>
+                La Universidad de Córdoba se encuentra en la ciudad vibrante de Montería, Colombia. Ofrecemos una educación de calidad con instalaciones modernas, incluyendo laboratorios avanzados, aulas equipadas y una amplia biblioteca. Nos esforzamos por brindar un entorno inclusivo y accesible para todos nuestros estudiantes, con un enfoque en la innovación y la excelencia académica.
+            </p>
+        </section>
+
+        <section class="news">
+            <h2 class="section-title">Noticias</h2>
+            <div class="news-item">
+                <img src="https://rionoticias.co/wp-content/uploads/2023/12/c47ce58f-cebc-45f6-8a90-6d54bbd3cd34.jpg" alt="Noticia 1">
+                <div>
+                    <h3>Nuevo Centro de Investigación</h3>
+                    <p>La Universidad de Córdoba ha inaugurado un nuevo centro de investigación enfocado en biotecnología para el desarrollo sostenible.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTlnorCJKwiYPrV1hjrfs23yxzST1HR1xXw&s" alt="Noticia 2">
+                <div>
+                    <h3>Becas para Estudiantes</h3>
+                    <p>Se han abierto nuevas convocatorias para becas que apoyan a estudiantes destacados en áreas de ciencias y tecnología.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2 class="section-title">Próximos Eventos</h2>
+            <div class="event-item">
+                <img src="https://burbujapolitica.com/wp-content/uploads/2022/01/IMG-20220120-WA0023.jpg" alt="Evento 1">
+                <div>
+                    <h3>Semana de la Ciencia</h3>
+                    <p>Únete a nosotros para una semana llena de conferencias, talleres y exposiciones sobre los últimos avances científicos.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="https://www.laregional.net/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-24-at-06.00.21-777x437-1.jpeg" alt="Evento 2">
+                <div>
+                    <h3>Feria de Admisiones</h3>
+                    <p>Explora nuestras facultades y programas académicos en la feria de admisiones. Conoce más sobre cómo aplicar y los requisitos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Testimonios</h2>
+            <p>"Estudiar en la Universidad de Córdoba ha sido una experiencia transformadora. Los profesores son expertos en sus campos y siempre dispuestos a ayudar."</p>
+            <p>"La diversidad de programas y la calidad de la infraestructura hacen de esta universidad un excelente lugar para crecer académica y personalmente."</p>
+        </section>
+    </div>
 </body>
-</html>
+    </html>
