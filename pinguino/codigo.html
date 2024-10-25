@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingüino</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #b3daff, #e6f7ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .penguin {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background: #000;
+            border-radius: 50% 50% 40% 40%;
+        }
+
+        .penguin .body {
+            position: absolute;
+            width: 120px;
+            height: 180px;
+            background: #fff;
+            top: 60px;
+            left: 40px;
+            border-radius: 50%;
+        }
+
+        .penguin .eye {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+            top: 30px;
+            left: 40px;
+        }
+        .penguin .eye.right {
+            left: auto;
+            right: 40px;
+        }
+
+        .penguin .eye::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #000;
+            border-radius: 50%;
+            top: 8px;
+            left: 8px;
+        }
+
+        .penguin .beak {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 35px solid orange;
+            top: 60px;
+            left: 75px;
+            rotate: 55deg;
+        }
+
+        .penguin .wing {
+            position: absolute;
+            width: 50px;
+            height: 150px;
+            background: #000;
+            border-radius: 50%;
+            top: 60px;
+        }
+
+        .penguin .wing.left {
+            left: -30px;
+            transform: rotate(-20deg);
+        }
+
+        .penguin .wing.right {
+            right: -30px;
+            transform: rotate(20deg);
+        }
+
+        .penguin .foot {
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            background: orange;
+            border-radius: 50% 50% 0 0;
+            top: 270px;
+        }
+
+        .penguin .foot.left {
+            left: 40px;
+        }
+
+        .penguin .foot.right {
+            right: 40px;
+        }
+
+        .ice {
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            background: #d9f2ff;
+            border-radius: 50%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .snow {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: fall 5s infinite linear;
+        }
+
+        .snow:nth-child(1) { width: 10px; height: 10px; top: 20px; left: 10%; }
+        .snow:nth-child(2) { width: 15px; height: 15px; top: 60px; left: 30%; }
+        .snow:nth-child(3) { width: 20px; height: 20px; top: 100px; left: 50%; }
+        .snow:nth-child(4) { width: 25px; height: 25px; top: 150px; left: 70%; }
+        .snow:nth-child(5) { width: 12px; height: 12px; top: 200px; left: 80%; }
+
+        @keyframes fall {
+            to {
+                transform: translateY(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="penguin">
+        <div class="body"></div>
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="beak"></div>
+        <div class="wing left"></div>
+        <div class="wing right"></div>
+        <div class="foot left"></div>
+        <div class="foot right"></div>
+    </div>
+
+    <div class="ice"></div>
+
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+    <div class="snow"></div>
+
+</body>
+</html>
